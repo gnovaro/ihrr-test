@@ -1,5 +1,40 @@
 # Code challenge Gustavo
 
+## Instalar el proyecto localmente
+
+Clonar el Repositorio:
+```bash
+git clone https://github.com/gnovaro/ihrr-test.git
+```
+Entrar al Directorio del Proyecto
+```bash
+cd ihrr-test
+```
+Instalar Dependencias:
+```bash
+composer install
+```
+
+Configurar el Archivo .env
+```bash
+cp .env.example .env
+```
+Generar una Clave de Aplicación
+```bash
+php artisan key:generate
+```
+Ejecutar Migraciones y Semillas (Si es necesario)
+```bash
+php artisan migrate --seed
+```
+Iniciar el Servidor de Desarrollo
+```bash
+php artisan serve
+```
+
+Acceder a tu Aplicación
+http://localhost:8000
+
 ## Tests
 Ejecutar los tests
 ```bash
@@ -16,7 +51,6 @@ ejecutar las migraciones
 ```bash
 php artisan migrate
 ```
-
 
 Estimado candidato:
 
@@ -48,16 +82,3 @@ mejorar su calidad. Algunas áreas a tener en cuenta son:
 4. Considerar la separación de responsabilidades y la estructura del código.
 5. Manejar adecuadamente los errores.
 6. Realizar los tests necesarios.
-
-## Entrega
-
-Por favor, envía un repositorio de Git con tu solución, que debe incluir:
-
-* Código fuente.
-* Pruebas automatizadas.
-* Instrucciones para instalar y correr tu proyecto localmente.
-* Un archivo README que explique tu enfoque, decisiones de diseño y cómo correr las pruebas.
-  
-Nos interesa no solo que el código funcione, sino también tu enfoque para resolver problemas y la calidad de tu código.
-
-Buena suerte y esperamos ver tu solución.
